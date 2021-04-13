@@ -37,22 +37,13 @@
 		  -webkit-transform: scale(1.08);
 		  transform: scale(1.08);
 		}
+		
+		/* small device */
+		@media (min-width: 576px) { }
 
-		@media screen and (min-width: 992px) {
-		  	.kotak img {
-			  -webkit-transition: 0.4s ease;
-			  transition: 0.4s ease;
-			  /*width: 200px;*/
-			  height: 200px;
-			}
-
-			iframe{
-				width: 560px;
-				height: 315px;
-			}
-		}
-
-		@media screen and (max-width: 600px) {
+		/*Medium device tablets*/
+		@media (min-width: 768px) {
+			/* ketika ukurannya kecil */
 		  	.kotak img {
 			  -webkit-transition: 0.4s ease;
 			  transition: 0.4s ease;
@@ -66,6 +57,23 @@
 			}
 		}
 
+		/*Large device desktop*/
+		@media (min-width: 992px) {
+			.kotak img {
+			  -webkit-transition: 0.4s ease;
+			  transition: 0.4s ease;
+			  /*width: 200px;*/
+			  height: 200px;
+			}
+
+			iframe{
+				width: 560px;
+				height: 315px;
+			}
+		}
+
+		/*Ektra large device*/
+		@media (min-width: 1200px) { }
 
 		/* responsive */
 
@@ -156,13 +164,13 @@
 					// console.log(cek);
 
 
-					if ( cek != 0) {
-						gambar = gambar;
-						// jika ada
-					}else{
-						gambar = "logo.png";
-						// jika tidak ada
-					}
+					// if ( cek != 0) {
+					// 	gambar = gambar;
+					// 	// jika ada
+					// }else{
+					// 	gambar = "logo.png";
+					// 	// jika tidak ada
+					// }
 
 					// width="200px" height="200px"
 
